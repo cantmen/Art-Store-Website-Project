@@ -6,6 +6,8 @@ html {
     font-family: 'Indie Flower', cursive;
     font-size:50px;
     margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 body {
@@ -72,6 +74,32 @@ img {
     font-size: 20px;
 }
 
+/* Main page */
+
+#shop {
+    font-size: 40px;
+    background-color: white;
+    top: 20px;
+    left: 210px;
+    color: black;
+    padding: 10px;
+}
+
+#heading {
+    font-size: 60px;
+}
+
+.homepage {
+    background-image: url("Images/background.jpg");
+    background-color: #cccccc;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    padding: 200px;
+    
+}
 
 /* Product detail page */
 
@@ -96,6 +124,7 @@ img {
 }
 
 /* Contact Us page */
+
 form {
     padding: 10px;
     margin: 25px 25px ;
