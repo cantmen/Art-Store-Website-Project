@@ -3,14 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Tech Store</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Art Store</h1>
+            <a href="index.html"><h1 class="title">Art Store</h1></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">All Products</a></li>
+                    <li><a href="products.html">All Products</a></li>
                     <li><a href="cart-page.html">Cart</a></li>
                 </ul>
             </nav>
@@ -19,17 +23,17 @@
 
      <!-- Main section to display products -->
         <main>
-            <h2>Product Detail</h2>
-            <div>
+            <h2 style="margin: 15px 25px;">Product Detail</h2>
+            <div class="products product-detail">
                 <a href="product-detail.html">
-                    <img src="Images/Colourful Mountin View Oil Painting.jpeg" alt="Colourful Mountin View Oil Painting photo"  width="400">
+                    <img src="Images/Colourful Mountin View Oil Painting.jpeg" alt="Colourful Mountin View Oil Painting photo" >
                 </a>
-                <a href="product-detail.html">
+                <a href="product-detail.html" class="button">
                     <h4>Colourful Mountin View Oil Painting</h4>
                 </a>
+                <p>Oil painting on a 12x16in canvas</p>
                 <p>$100.00</p>
-                <p>Oil painting on a <br> 12x16in canvas</p>
-                <a href="cart-page.html">Add to Cart</a>
+                <a href="cart-page.html" class="cart">Add to Cart</a>
             </div>
 
 

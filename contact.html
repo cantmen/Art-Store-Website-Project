@@ -3,14 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Tech Store</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Art Store</h1>
+            <a href="index.html"><h1 class="title">Art Store</h1></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">All Products</a></li>
+                    <li><a href="products.html">All Products</a></li>
                     <li><a href="cart-page.html">Cart</a></li>
                 </ul>
             </nav>
@@ -19,32 +23,22 @@
 
      <!-- Main section to display products -->
         <main>
-            <h2>Contact Us</h2>
+            <h2 style="margin: 15px 25px;">Contact Us</h2>
 
             <form action="" method="">
 
-                <div>
+                <div class="inline">
                     <label for="name">Name:</label> <input type="text" placeholder="Enter your name" id="name" name="name"> 
                 </div>
 
-               <div>
+               <div class="inline">
                     <label for="email"></label>Email: <input type="email" placeholder="Enter your email" id="email" name="email">
                </div>
 
-                <div>
+                <div class="inline">
                     <label for="Message">Message:</label> <textarea cols="30" rows="5" id="message" name="message"></textarea>
                 </div>
-
-                <!-- <div>
-                    <label for="subject">Subject:</label>
-                    <select id="subject">
-                        <option value="delivery">Delivery Info</option>
-                        <option value="order_tracking">Order Tracking</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div> -->
-
-                <div>
+                <div class="inline">
                     <label for="subject">Subject:</label>
                     <input type="text" list="subjects" id="subject" placeholder="Enter your subject">
                     <datalist id="subjects">

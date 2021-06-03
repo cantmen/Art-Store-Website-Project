@@ -1,0 +1,116 @@
+html {
+    background: #f2f2f2;
+}
+
+.title {
+    font-family: 'Indie Flower', cursive;
+    font-size:50px;
+    margin-left: 15px;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+}
+
+header, footer {
+    background: #333333; 
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+header li {
+    display: inline;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+header h1, nav{
+    display: inline-block;
+}
+
+footer li {
+    font-size: 20px;
+    margin: 10px 15px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #21b8de;
+}
+
+main {
+    padding: 15px;
+}
+
+.products {
+    display: inline-block;
+    border: 1px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+img {
+    max-height: 350px;
+}
+
+.button {
+    font-size: 20px;
+}
+
+
+/* Product detail page */
+
+.cart {
+    background-color: #0e3259;
+    position: relative;
+    top: 20px;
+    left: 210px;
+    color: white;
+    padding: 10px;
+}
+
+.product-detail {
+    position: relative;
+    width: 100%;
+}
+
+.product-detail img {
+    max-width: 700px;
+    float: left;
+    padding: 30px;
+}
+
+/* Contact Us page */
+form {
+    padding: 10px;
+    margin: 25px 25px ;
+    width: 600px;
+}
+
+form > div {
+    margin: 10px 0 ;
+}
+
+.inline label {
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"], textarea{
+    padding: 10px;
+    width: 400px;
+}
