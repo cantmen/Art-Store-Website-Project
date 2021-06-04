@@ -2,29 +2,41 @@ html {
     background: #f2f2f2;
 }
 
+body {
+    background: #f2f2f2;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+}
+
 .title {
     font-family: 'Indie Flower', cursive;
     font-size:50px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
 }
 
-body {
-    background: #f2f2f2;
-    margin: 0 auto;
-    font-family: 'EB Garamond', serif;
+.title:hover {
+    color: rgb(201, 196, 196);
+}
+
+.navlink li:hover {
+    color: rgb(201, 196, 196);
+}
+
+
+.productlink a:hover * {
+    opacity: 0.50;
 }
 
 header, footer {
     background: #333333; 
     color: white;
+    padding: 10px 20px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    margin-left: 10px;
+input[type="search"] {
+    width: 100%;
 }
 
 header li {
@@ -37,10 +49,15 @@ header h1, nav{
     display: inline-block;
 }
 
+header h1 {
+    width: 100%;
+}
+
 footer li {
     font-size: 20px;
     margin: 10px 15px;
 }
+
 
 li {
     list-style: none;
@@ -51,23 +68,22 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: #21b8de;
-}
-
 main {
     padding: 15px;
 }
 
 .products {
-    display: inline-block;
+    box-sizing: border-box;
     border: 1px;
-    width: 400px;
+    /*width: 30%;*/
+    width: 100%;
     margin: 10px;
     padding: 10px;
 }
+
 img {
     max-height: 350px;
+    max-width: 100%;
 }
 
 .button {
@@ -83,6 +99,10 @@ img {
     left: 210px;
     color: black;
     padding: 10px;
+}
+
+#shop:hover {
+    opacity: 0.8;
 }
 
 #heading {
@@ -118,7 +138,6 @@ img {
 }
 
 .product-detail img {
-    max-width: 700px;
     float: left;
     padding: 30px;
 }
@@ -142,4 +161,56 @@ form > div {
 input[type="text"], input[type="email"], textarea{
     padding: 10px;
     width: 400px;
+}
+
+/* Table */
+
+@media (max-width:700px) {
+    .product-detail img {
+        width: 80%;
+    }
+}
+
+@media (max-width:900px) {
+    body {
+        text-align: center;
+    }
+}
+
+@media (min-width: 700px) {
+    input[type="search"] {
+        width: 40%;
+        margin-left: 2em;
+    }
+    .products {
+        display: inline-block;
+        width: 38%;
+    }
+    heading {
+        text-align: left;
+    }
+
+    .allproducts {
+        text-align: center;
+    }
+
+
+@media (min-width: 900px) {
+    header h1 {
+        width: 50%;
+        text-align: left;
+    }
+    input[type="search"] {
+        width: 15%;
+    }
+    footer {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .products {
+        display: inline-block;
+        width: 30%;
+    }
 }
